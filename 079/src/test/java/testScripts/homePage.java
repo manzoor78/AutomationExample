@@ -13,21 +13,45 @@ import org.testng.annotations.BeforeClass;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class homePage extends testBaseCommon{
 	
 	homePageLocators homePageLib = new homePageLocators();
+	
+	// To find all the flights flying from Bangalore to Delhi next week
   @Test
   public void findFlights() throws InterruptedException {
-	  //String expected = "Flights on top !";
+	  
+	 //Input the source as Bangalore
 	  homePageLib.getSource();
-	  Thread.sleep(4000);
+	  
+	 // Input the destination as Delhi
 	  homePageLib.getdest();
-	  Thread.sleep(4000);
+	  
+	  homePageLib.click_depart_date_field();
+	  //Get the current Day
+	  String dateStr = homePageLib.get_current_depart_date();
+	  int todaysDate = Integer.parseInt(dateStr);
+
+	  //Select Depart Date equal to current day plus 7
+	  homePageLib.select_depart_date(add(todaysDate,7));
+	  commonUtils.implicitWait(3000);
+	  
+	  //Search for flights
 	  homePageLib.clickSearch();
 	  
+	  Assert.assertTrue(homePageLib.getSearchResult().isDisplayed());
+	  System.out.println("Test execution pass");
+	  
   }
+  
+  public int add(int x, int y) {
+	  return x+y;
+  }
+  
+  
   @BeforeMethod
   public void beforeMethod() {
   }
@@ -43,7 +67,7 @@ public class homePage extends testBaseCommon{
 
   @AfterClass
   public void afterClass() {
-	  //browserDriver.driver.close();
+	  //browserDriver.driver.quit();
   }
 
 }

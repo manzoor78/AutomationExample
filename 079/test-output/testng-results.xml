@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27606" started-at="2017-09-12T16:08:24Z" finished-at="2017-09-12T16:08:51Z">
+  <suite name="Default suite" duration-ms="26640" started-at="2017-09-17T11:40:11Z" finished-at="2017-09-17T11:40:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27606" started-at="2017-09-12T16:08:24Z" finished-at="2017-09-12T16:08:51Z">
+    <test name="Default test" duration-ms="26640" started-at="2017-09-17T11:40:11Z" finished-at="2017-09-17T11:40:38Z">
       <class name="testScripts.homePage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.homePage@5bcab519]" name="setup" is-config="true" duration-ms="12478" started-at="2017-09-12T21:38:24Z" finished-at="2017-09-12T21:38:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.homePage@3fee9989]" name="setup" is-config="true" duration-ms="9986" started-at="2017-09-17T17:10:11Z" finished-at="2017-09-17T17:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testScripts.homePage@5bcab519]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-09-12T21:38:36Z" finished-at="2017-09-12T21:38:36Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testScripts.homePage@3fee9989]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-17T17:10:21Z" finished-at="2017-09-17T17:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="findFlights()[pri:0, instance:testScripts.homePage@5bcab519]" name="findFlights" duration-ms="15109" started-at="2017-09-12T21:38:36Z" finished-at="2017-09-12T21:38:51Z">
+        <test-method status="PASS" signature="findFlights()[pri:0, instance:testScripts.homePage@3fee9989]" name="findFlights" duration-ms="16627" started-at="2017-09-17T17:10:21Z" finished-at="2017-09-17T17:10:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlights -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testScripts.homePage@5bcab519]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-09-12T21:38:51Z" finished-at="2017-09-12T21:38:51Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testScripts.homePage@3fee9989]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-09-17T17:10:38Z" finished-at="2017-09-17T17:10:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testScripts.homePage@5bcab519]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-09-12T21:38:51Z" finished-at="2017-09-12T21:38:51Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testScripts.homePage@3fee9989]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-17T17:10:38Z" finished-at="2017-09-17T17:10:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

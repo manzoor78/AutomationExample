@@ -13,13 +13,15 @@ public class browserDriver {
 		try{
 		if(browser.equalsIgnoreCase("firefox")){
 			System.out.println("Firefox browser selected");
-			System.setProperty("webdriver.firefox.driver","/Users/manzoorhunagund/Desktop/firefox");
+			System.setProperty("webdriver.firefox.driver","C:\\Users\\manzo\\Desktop\\firefox.exe");
 			driver = new FirefoxDriver();
+			
 		}
 		else if(browser.equalsIgnoreCase("chrome")){
 			System.out.println("Chrome browser selected");
-			System.setProperty("webdriver.chrome.driver","/Users/manzoorhunagund/Desktop/chromedriver");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\manzo\\Desktop\\chromedriver.exe");
 			driver = new ChromeDriver();
+			
 		}
 		
 		}
